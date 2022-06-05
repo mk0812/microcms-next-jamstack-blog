@@ -6,7 +6,7 @@ export default function Home({ blog }) {
     <div>
       <ul>
         {blog.map((blog) => (
-          <li key={blog.id}>
+          <li key={blog.id} className="text-3xl font-bold underline">
             <Link href={`/blog/${blog.id}`}>
               <a>{blog.title}</a>
             </Link>
